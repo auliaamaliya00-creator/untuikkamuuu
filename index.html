@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffd9e8">
+  <title>A Little World for Sayang ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span class="spark s1">✦</span><span class="spark s2">✧</span><span class="spark s3">♡</span>
+    <span class="float-heart h1">♡</span><span class="float-heart h2">♥</span><span class="float-heart h3">♡</span>
+    <div class="cloud cloud-a"></div><div class="cloud cloud-b"></div>
+  </div>
+
+  <!-- Intro: neon butterflies build T & L -->
+  <section id="intro" class="screen intro-screen">
+    <div class="intro-stars" aria-hidden="true"></div>
+    <p class="eyebrow">A tiny surprise for you</p>
+    <div class="butterfly-field" id="butterflyField" aria-hidden="true"></div>
+    <h1 id="tlTitle" class="tl-title">T <span>&</span> L</h1>
+    <p class="intro-caption">a little world made with love ♡</p>
+    <div class="loading-line"><span></span></div>
+    <button id="enterWorld" class="pill neon-enter" hidden>Masuk ke dunia kita ♡</button>
+  </section>
+
+  <!-- PIN -->
+  <section id="pinScreen" class="screen pin-screen hidden">
+    <div class="pin-card">
+      <div class="tiny-bow">୨୧</div>
+      <div class="mascot mini-cat" aria-hidden="true"><span class="cat-face">ฅ^•ﻌ•^ฅ</span></div>
+      <p class="eyebrow pink-text">secret little door</p>
+      <h1>Hi, sayanggg! ♡</h1>
+      <p class="pin-sub">Sebelum masuk, masukkan PIN dulu yaa.</p>
+      <div class="pin-dots" id="pinDots" aria-label="PIN berisi enam angka">
+        <span>♡</span><span>♡</span><span>♡</span><span>♡</span><span>♡</span><span>♡</span>
+      </div>
+      <div class="keypad" id="keypad" aria-label="Keypad PIN">
+        <button data-key="1">1 <small>♡</small></button><button data-key="2">2 <small>♡</small></button><button data-key="3">3 <small>♡</small></button>
+        <button data-key="4">4 <small>♡</small></button><button data-key="5">5 <small>♡</small></button><button data-key="6">6 <small>♡</small></button>
+        <button data-key="7">7 <small>♡</small></button><button data-key="8">8 <small>♡</small></button><button data-key="9">9 <small>♡</small></button>
+        <button class="key-soft" data-key="clear">⌫ <small>hapus</small></button><button data-key="0">0 <small>♡</small></button><button class="key-soft" data-key="enter">↵ <small>masuk</small></button>
+      </div>
+      <p id="pinMessage" class="pin-message" aria-live="polite">Petunjuk kecil: tanggal spesial kita ♡</p>
+      <p class="small-note">pelan-pelan aja, gantenggg ♡</p>
+    </div>
+  </section>
+
+  <!-- Main app -->
+  <main id="app" class="app hidden">
+    <header class="topbar">
+      <div class="brand-mark">♡</div>
+      <div><span class="eyebrow">your tiny comfort place</span><strong>For sayanggg</strong></div>
+      <button id="musicToggle" class="music-button" aria-label="Nyalakan atau matikan musik">♫ <span id="musicLabel">Musik ON</span></button>
+    </header>
+
+    <section id="home" class="page active">
+      <div class="hero-card">
+        <span class="sticker star-sticker">✦</span><span class="sticker heart-sticker">♡</span>
+        <div class="hero-cat" aria-hidden="true"><div class="cat-ears">⌃　⌃</div><div class="cat-head">ฅ(˶ᵔ ᵕ ᵔ˶)ฅ</div><div class="cat-heart">♥</div></div>
+        <p class="eyebrow">welcome home</p>
+        <h1>Welcome home,<br><em>sayanggg!</em> ♡</h1>
+        <p class="body-copy">Udah pulang kerja, yaa? Capek banget pasti. Tarik napas dulu, gantenggg. Di sini kamu boleh istirahat sebentar dan senyum sedikit. 🌷</p>
+        <button class="pill" data-go="rest">Aku mau istirahat ♡</button>
+      </div>
+      <div class="photo-card">
+        <div class="photo-frame"><img src="assets/sayang.jpg" alt="Foto sayanggg"></div>
+        <div><p class="eyebrow">my favorite human</p><h2>Gantenggg punya aku ♡</h2><p class="body-copy">Ih, siapa nih yang fotonya mahal banget? WKWK. Yaudah, satu aja dulu, nanti aku minta lagi. Hehehe. 💗</p></div>
+      </div>
+      <div class="quote-strip">“Hari yang berat juga akan selesai. Kamu udah berusaha, dan itu berarti.” ♡</div>
+    </section>
+
+    <section id="rest" class="page">
+      <div class="section-heading"><span class="section-icon">☁</span><p class="eyebrow">little reminder</p><h1>Tempat istirahat<br>sayanggg</h1><p>Checklist kecil buat gantenggg malam ini ♡</p></div>
+      <div class="reminder-list">
+        <label class="reminder"><input type="checkbox"><span class="round-icon">💧</span><span><b>Minum air dulu</b><small>Biar badan kamu nggak gampang capek.</small></span><i>♡</i></label>
+        <label class="reminder"><input type="checkbox"><span class="round-icon">🍚</span><span><b>Makan yang cukup</b><small>Jangan cuma sibuk kerja, yaa.</small></span><i>♡</i></label>
+        <label class="reminder"><input type="checkbox"><span class="round-icon">🛏️</span><span><b>Istirahat sebentar</b><small>Kamu nggak harus kuat terus setiap waktu.</small></span><i>♡</i></label>
+        <label class="reminder"><input type="checkbox"><span class="round-icon">🌷</span><span><b>Kasih waktu buat diri sendiri</b><small>Kamu juga pantas merasa tenang dan bahagia.</small></span><i>♡</i></label>
+      </div>
+      <div class="soft-note">Pinterrr! Satu peluk virtual buat kamu: (づ｡◕‿‿◕｡)づ ♡</div>
+    </section>
+
+    <section id="favorites" class="page">
+      <div class="section-heading"><span class="section-icon">✿</span><p class="eyebrow">things i adore</p><h1>Things I like<br>about you</h1><p>Beberapa hal yang bikin aku suka sama kamu ♡</p></div>
+      <div class="love-list">
+        <div class="love-item"><span>♡</span><p>Kamu tetap berusaha, bahkan saat hari kamu terasa melelahkan.</p></div>
+        <div class="love-item"><span>♡</span><p>Perhatian kamu, termasuk lewat hal-hal kecil yang mungkin kamu anggap biasa.</p></div>
+        <div class="love-item"><span>♡</span><p>Cara kamu bikin aku senyum, kadang tanpa sadar. Hehehe.</p></div>
+        <div class="love-item"><span>♡</span><p>Kamu punya sisi lembut yang bikin aku merasa dekat sama kamu.</p></div>
+        <div class="love-item"><span>♡</span><p>Dan yang paling penting, kamu adalah kamu. Itu udah spesial buat aku. 💗</p></div>
+      </div>
+      <div class="doodle-cat" aria-hidden="true">ฅ(=･ω･=)ฅ <span>aku suka kamu!</span></div>
+    </section>
+
+    <section id="smile" class="page">
+      <div class="section-heading"><span class="section-icon">🎀</span><p class="eyebrow">tiny smile mission</p><h1>Yuk, senyum<br>sedikit! ♡</h1><p>Pilih salah satu kotak, gantenggg.</p></div>
+      <div class="mission-grid">
+        <button class="mission-card" data-mission="pep"><span>🌟</span><b>Pesan penyemangat</b><small>buat kamu yang hebat</small></button>
+        <button class="mission-card" data-mission="quote"><span>💌</span><b>Quotes buat kamu</b><small>sedikit manis-manis</small></button>
+        <button class="mission-card" data-mission="joke"><span>🐱</span><b>Ganggu kucing</b><small>biar ketawa dikit</small></button>
+        <button class="mission-card" data-mission="random"><span>🎲</span><b>Kejutan random</b><small>coba pencet!</small></button>
+      </div>
+      <div id="missionResult" class="mission-result" aria-live="polite">Klik salah satu kartu di atas yaa ♡</div>
+      <button class="pill outline" id="anotherMessage">Lagi donggg ↻</button>
+    </section>
+
+    <section id="letter" class="page">
+      <div class="letter-wrap">
+        <div class="letter-stamp">♡</div><p class="eyebrow">a little message for you</p><h1>Buat sayanggg</h1>
+        <div class="letter-paper">
+          <p>Hai, gantenggg… ♡</p>
+          <p>Kalau hari ini terasa panjang, semoga setelah sampai di sini kamu bisa istirahat sebentar. Kamu nggak harus menyelesaikan semuanya sekaligus, yaa. Satu hari demi satu hari aja.</p>
+          <p>Aku harap kamu tetap punya alasan kecil buat senyum, meskipun hari kamu lagi ramai dan melelahkan. Jangan lupa makan, minum, dan kasih diri kamu waktu buat bernapas.</p>
+          <p>Aku mungkin nggak selalu ada di samping kamu, tapi aku senang bisa jadi bagian kecil dari hari-hari kamu. Semoga banyak hal baik datang ke kamu, sayanggg. 💗</p>
+          <p class="signature">dari aku, yang suka gangguin kamu ♡<br><b>— Liya</b></p>
+        </div>
+        <div class="letter-cat" aria-hidden="true">૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა</div>
+      </div>
+    </section>
+
+    <section id="surprise" class="page">
+      <div class="section-heading"><span class="section-icon">🎁</span><p class="eyebrow">just for you</p><h1>Surprise for<br>you, gantenggg!</h1><p>Ada hadiah kecil di dalam kotak ini…</p></div>
+      <button id="giftButton" class="gift-box" aria-label="Buka hadiah"><span class="gift-bow">🎀</span><span class="gift-emoji">🎁</span><span class="gift-text">pencet aku!</span></button>
+      <div id="giftMessage" class="gift-message hidden">
+        <div class="big-heart">♡</div><h2>Ini buat kamu, sayanggg!</h2>
+        <p>Makasih udah jadi seseorang yang spesial buat aku. Semoga malam kamu lebih ringan, hati kamu lebih tenang, dan besok ada banyak hal baik yang menunggu kamu.</p>
+        <p class="gift-last">Kamu hebat, kamu berharga, dan kamu pantas disayang. Jangan lupa itu, yaa. ♡</p>
+      </div>
+    </section>
+
+    <section id="ending" class="page ending-page">
+      <div class="night-sky"><span class="moon">☾</span><span class="night-star ns1">✦</span><span class="night-star ns2">✧</span><span class="night-star ns3">✦</span><div class="rooftop-cat">ฅ^•ﻌ•^ฅ</div></div>
+      <p class="eyebrow">before you go</p><h1>Good night,<br><em>my gantenggg</em> ♡</h1>
+      <p class="body-copy">Semoga tidur kamu nyenyak, mimpi kamu indah, dan besok kamu bangun dengan hati yang lebih ringan. Jangan lupa jaga diri, yaa.</p>
+      <div class="ending-mark">T <span>&</span> L</div>
+      <p class="ending-small">jarak boleh ada, tapi kita tetap bisa saling mendoakan ♡</p>
+      <button class="pill" data-go="home">Balik lagi ke awal ♡</button>
+    </section>
+
+    <nav class="bottom-nav" aria-label="Navigasi utama">
+      <button class="nav-item active" data-page="home"><span>⌂</span><small>Home</small></button>
+      <button class="nav-item" data-page="rest"><span>☁</span><small>Istirahat</small></button>
+      <button class="nav-item" data-page="favorites"><span>♡</span><small>Favorit</small></button>
+      <button class="nav-item" data-page="smile"><span>☺</span><small>Senyum</small></button>
+      <button class="nav-item" data-page="letter"><span>✉</span><small>Surat</small></button>
+      <button class="nav-item" data-page="surprise"><span>♧</span><small>Surprise</small></button>
+      <button class="nav-item" data-page="ending"><span>☾</span><small>Ending</small></button>
+    </nav>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
